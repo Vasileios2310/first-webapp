@@ -1,3 +1,11 @@
+/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.AssemblyInfoInputs.cache
+/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.AssemblyInfo.cs
+/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.csproj.CoreCompileInputs.cache
+/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.MvcApplicationPartsAssemblyInfo.cache
+/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.RazorAssemblyInfo.cache
+/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.RazorAssemblyInfo.cs
+/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.sourcelink.json
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/bin/Debug/net9.0/appsettings.Development.json
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/bin/Debug/net9.0/appsettings.json
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/bin/Debug/net9.0/WebAppStarter.staticwebassets.runtime.json
@@ -7,14 +15,6 @@
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/bin/Debug/net9.0/WebAppStarter.runtimeconfig.json
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/bin/Debug/net9.0/WebAppStarter.dll
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/bin/Debug/net9.0/WebAppStarter.pdb
-/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.GeneratedMSBuildEditorConfig.editorconfig
-/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.AssemblyInfoInputs.cache
-/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.AssemblyInfo.cs
-/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.csproj.CoreCompileInputs.cache
-/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.MvcApplicationPartsAssemblyInfo.cache
-/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.RazorAssemblyInfo.cache
-/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.RazorAssemblyInfo.cs
-/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/WebAppStarter.sourcelink.json
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/scopedcss/bundle/WebAppStarter.styles.css
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppStarter/obj/Debug/net9.0/scopedcss/projectbundle/WebAppStarter.bundle.scp.css

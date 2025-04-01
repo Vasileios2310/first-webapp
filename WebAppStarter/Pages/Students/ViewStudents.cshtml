@@ -1,0 +1,38 @@
+@page
+@model WebAppStarter.Pages.Students.ViewStudents
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h1>Students List</h1>
+@if (Model.StudentsReadOnlyDTOs.Any())
+{
+    <table class="table table-striped table-bordered w-75">
+    
+        <thead>
+        <tr class="table-primary">
+            <th colspan="3">C# Students</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        </thead>
+        <tbody>
+           @foreach (var studentReadOnlyDTO in Model.StudentsReadOnlyDTOs)
+            {
+                <tr>
+                    <td>@studentReadOnlyDTO.Id</td>
+                    <td>@studentReadOnlyDTO.Firstname</td>
+                    <td>@studentReadOnlyDTO.Lastname</td>
+                </tr>
+            }
+    </tbody>
+    </table>
+    }
+else
+{   
+    <p>No students found.</p>
+}

@@ -36,6 +36,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/vasiliskr/7.C\# .NET/WebAppProjects/WebAppStarter/Pages/Students/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3R1ZGVudHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vasiliskr/7.C\# .NET/WebAppProjects/WebAppStarter/Pages/Students/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3R1ZGVudHMvU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vasiliskr/7.C\# .NET/WebAppProjects/WebAppStarter/Pages/Students/ViewStudents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3R1ZGVudHMvVmlld1N0dWRlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/vasiliskr/7.C\# .NET/WebAppProjects/WebAppStarter/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
