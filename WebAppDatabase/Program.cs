@@ -2,11 +2,15 @@
 using Serilog;
 using Serilog.Events;
 using WebAppDatabase.Configuration;
+using WebAppDatabase.DAO;
+using WebAppDatabase.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the IoC container.
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<IStudentDAO, StudentDAOImpl>(); //inject DAO implementation
+builder.Services.AddScoped<IStudentService, StudentServiceImpl>(); // //inject service implementation
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Host.UseSerilog((context, config) =>
 {
@@ -35,7 +39,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
