@@ -1,7 +1,28 @@
+
+using Serilog;
+using Serilog.Events;
+using WebAppDatabase.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddAutoMapper(typeof(MapperConfig));
+builder.Host.UseSerilog((context, config) =>
+{
+     config.ReadFrom.Configuration(context.Configuration);
+    //     .MinimumLevel.Debug()
+    //     .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+    //     .Enrich.FromLogContext()
+    //     // .Enrich.WithAspNetCore()
+    //     .WriteTo.Console()
+    //     .WriteTo.File(
+    //         "Logs/logs.txt",
+    //         rollingInterval: RollingInterval.Day,
+    //         outputTemplate:
+    //         "{Timestamp:dd-MM-yyyy HH:mm:ss:fff zzz} {SourceContext} [{Debug}]} {Message}{NewLine}{Exception}",
+    //         retainedFileCountLimit: null, fileSizeLimitBytes: null);
+});
 
 var app = builder.Build();
 
