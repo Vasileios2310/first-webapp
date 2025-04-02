@@ -64,32 +64,107 @@ public class StudentServiceImpl : IStudentService
             {
                 throw new StudentNotFoundException($"Student with id {studentUpdateDTO.Id} not found");
             }
+
             student = _mapper.Map<Student>(studentUpdateDTO);
             _studentDAO.UpdateStudent(student);
+            scope.Complete();
         }
         catch (StudentNotFoundException ex)
         {
             _logger.LogError("Error. Student with id {0} not found. {1}", studentUpdateDTO.Id, ex.Message);
+            throw;
         }
         catch (TransactionException ex)
         {
             _logger.LogError("Error. Student with {Firstname} {Lastname} not updated} . {ErrorMessage}",
                 studentUpdateDTO.Firstname, studentUpdateDTO.Lastname, ex.Message);
+            throw;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error. Student with {Id} {Firstname} {Lastname} not updated} . {ErrorMessage}",
+                studentUpdateDTO.Id, studentUpdateDTO.Firstname, studentUpdateDTO.Lastname, ex.Message);
+            throw;
         }
     }
 
     public void DeleteStudent(int id)
     {
-        throw new NotImplementedException();
+        try
+        {
+            using TransactionScope scope = new();
+            if (_studentDAO.GetStudentById(id) == null)
+            {
+                throw new StudentNotFoundException($"Student with id {id} not found");
+            }
+            _studentDAO.DeleteStudent(id);
+            scope.Complete();
+        }
+        catch (StudentNotFoundException ex)
+        {
+            _logger.LogError("Error. Student with id {Id} not found. {ErrorMessage}",id, ex.Message);
+            throw;
+        }
+        catch (TransactionException ex)
+        {
+            _logger.LogError("Error. Student with id {Id} not deleted. {ErrorMessage}",id, ex.Message);
+            throw;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error. Student with id {Id} could not deleted. {ErrorMessage}", id ,ex.Message);
+            throw;
+        }
     }
 
-    public StudentReadonlyDTO? GetStudent(int id)
+    public StudentReadonlyDTO GetStudent(int id)
     {
-        throw new NotImplementedException();
+        StudentReadonlyDTO studentReadonlyDTO;
+        Student? student;
+
+        try
+        {
+            student = _studentDAO.GetStudentById(id);
+            if (_studentDAO.GetStudentById(id) == null)
+            {
+                throw new StudentNotFoundException($"Student with id {id} not found");
+            }
+            studentReadonlyDTO = _mapper.Map<StudentReadonlyDTO>(student);
+            return studentReadonlyDTO;
+            
+        }
+        catch (StudentNotFoundException ex)
+        {
+            _logger.LogError("Error. Student with id {Id} not found. {ErrorMessage}", id, ex.Message);
+            throw;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error. Student with id {Id} could not found. {ErrorMessage}", id, ex.Message);
+            throw;
+        }
     }
 
     public List<StudentReadonlyDTO> GetAllStudents()
     {
-        throw new NotImplementedException();
+        StudentReadonlyDTO studentReadonlyDTO;
+        List<StudentReadonlyDTO> studentsReadonlyDTOs = new();
+        List<Student> students;
+
+        try
+        {
+            students = _studentDAO.GetAll();
+            foreach (Student student in students)
+            {
+                studentReadonlyDTO = _mapper.Map<StudentReadonlyDTO>(student);
+                studentsReadonlyDTOs.Add(studentReadonlyDTO);
+            }
+            return studentsReadonlyDTOs;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error. Students not found. {ErrorMessage}", ex.Message);
+            throw;
+        }
     }
 }
