@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0NZs0+BDyGUO6cE/S+zCWSTZxQp78Y1X+G5/9uWM4sM=",
+  "Hash": "QZmjuVhUbV3mphkR8KvLdTC4KQyeef7C5ryQa6Um+SM=",
   "Source": "WebAppDatabase",
   "BasePath": "_content/WebAppDatabase",
   "Mode": "Default",
@@ -540,6 +540,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/compressed/bgx0mqfdgz-6x4dkl38lx.gz",
+      "SourceId": "WebAppDatabase",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/WebAppDatabase",
+      "RelativePath": "js/student#[.{fingerprint=6x4dkl38lx}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/js/student.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "zlum5f9val",
+      "Integrity": "iaqg0OR553uvftGeYOuSJf1gbQRIeK15ZCp7SjTr/+o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/js/student.js"
     },
     {
       "Identity": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/compressed/d2qmmmvdaq-6pdc2jztkx.gz",
@@ -1464,6 +1485,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/js/student.js",
+      "SourceId": "WebAppDatabase",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/",
+      "BasePath": "_content/WebAppDatabase",
+      "RelativePath": "js/student#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6x4dkl38lx",
+      "Integrity": "1m3+QBphiHTv/2CuxQJbX0xAy+G7AA4gtnWMiQP4wn4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/student.js"
     },
     {
       "Identity": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
@@ -3618,6 +3660,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-AXztSpoe10GTxIpe7DqcvjAoPi8BndznaaLKrv6dOdI="
+        }
+      ]
+    },
+    {
+      "Route": "js/student.6x4dkl38lx.js",
+      "AssetFile": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/compressed/bgx0mqfdgz-6x4dkl38lx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006896551724"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iaqg0OR553uvftGeYOuSJf1gbQRIeK15ZCp7SjTr/+o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 20:27:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1m3+QBphiHTv/2CuxQJbX0xAy+G7AA4gtnWMiQP4wn4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6x4dkl38lx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/student.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1m3+QBphiHTv/2CuxQJbX0xAy+G7AA4gtnWMiQP4wn4="
+        }
+      ]
+    },
+    {
+      "Route": "js/student.6x4dkl38lx.js",
+      "AssetFile": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/js/student.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1m3+QBphiHTv/2CuxQJbX0xAy+G7AA4gtnWMiQP4wn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 20:27:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6x4dkl38lx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/student.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1m3+QBphiHTv/2CuxQJbX0xAy+G7AA4gtnWMiQP4wn4="
+        }
+      ]
+    },
+    {
+      "Route": "js/student.6x4dkl38lx.js.gz",
+      "AssetFile": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/compressed/bgx0mqfdgz-6x4dkl38lx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iaqg0OR553uvftGeYOuSJf1gbQRIeK15ZCp7SjTr/+o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 20:27:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6x4dkl38lx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/student.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iaqg0OR553uvftGeYOuSJf1gbQRIeK15ZCp7SjTr/+o="
+        }
+      ]
+    },
+    {
+      "Route": "js/student.js",
+      "AssetFile": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/compressed/bgx0mqfdgz-6x4dkl38lx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006896551724"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iaqg0OR553uvftGeYOuSJf1gbQRIeK15ZCp7SjTr/+o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 20:27:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1m3+QBphiHTv/2CuxQJbX0xAy+G7AA4gtnWMiQP4wn4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1m3+QBphiHTv/2CuxQJbX0xAy+G7AA4gtnWMiQP4wn4="
+        }
+      ]
+    },
+    {
+      "Route": "js/student.js",
+      "AssetFile": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/js/student.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1m3+QBphiHTv/2CuxQJbX0xAy+G7AA4gtnWMiQP4wn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 20:27:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1m3+QBphiHTv/2CuxQJbX0xAy+G7AA4gtnWMiQP4wn4="
+        }
+      ]
+    },
+    {
+      "Route": "js/student.js.gz",
+      "AssetFile": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/compressed/bgx0mqfdgz-6x4dkl38lx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iaqg0OR553uvftGeYOuSJf1gbQRIeK15ZCp7SjTr/+o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 20:27:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iaqg0OR553uvftGeYOuSJf1gbQRIeK15ZCp7SjTr/+o="
         }
       ]
     },

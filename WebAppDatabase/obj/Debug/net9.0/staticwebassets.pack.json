@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
+      "Id": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/js/student.js",
+      "PackagePath": "staticwebassets/js/student.js"
+    },
+    {
       "Id": "/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },

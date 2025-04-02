@@ -1,0 +1,47 @@
+@page "/Students/getall"
+@model WebAppDatabase.Pages.Students.Index
+@{
+}
+
+<h1 class="text-center mb-4" xmlns="http://www.w3.org/1999/html">Students</h1>
+<a class="btn btn-primary btn-lg mb-4" href="/Students/Create">New Students</a>
+
+<table class="mx-auto table table-dark text-center">
+    <thead>
+    <tr class="table-primary">
+        <th colspan="4">C# Programming Students</th>
+    </tr>
+    <tr>
+        <th>Id</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Edit/Delete</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    @if (Model.StudentsReadonlyDTO.Count != 0)
+    {
+        @foreach (var student in Model.StudentsReadonlyDTO)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Firstname</td>
+                <td>@student.Lastname</td>
+                <td>
+                    <a class="btn btn-primary" href="/Students/@student.Id/Update">Edit</a>
+                    <a class="btn btn-danger" href="javascript:void(0)" onclick="confirmDelete(@student.Id)">Delete</a>
+                </td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+<div>
+    @if (Model.ErrorObj is not null)
+    {
+        <p>@Model.ErrorObj.Message</p>
+    }
+</div>
+
+<script src="~/js/student.js"></script>

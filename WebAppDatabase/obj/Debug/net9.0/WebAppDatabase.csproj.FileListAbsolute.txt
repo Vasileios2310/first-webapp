@@ -146,3 +146,4 @@
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/WebAppDatabase.pdb
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/WebAppDatabase.genruntimeconfig.cache
 /Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/ref/WebAppDatabase.dll
+/Users/vasiliskr/7.C# .NET/WebAppProjects/WebAppDatabase/obj/Debug/net9.0/compressed/bgx0mqfdgz-6x4dkl38lx.gz

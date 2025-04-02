@@ -6,7 +6,7 @@ namespace WebAppDatabase.Configuration;
 
 public class MapperConfig : Profile
 {
-    protected MapperConfig()
+    public MapperConfig()
     {
         // CreateMap<TSource, TDestination>() and reverse
         CreateMap<StudentInsertDTO, Student>().ReverseMap(); 

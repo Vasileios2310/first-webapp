@@ -1,0 +1,50 @@
+@page "/Students/Create"
+@model WebAppDatabase.Pages.Students.Create
+
+@{
+    ViewData["Title"] = "Add Student";
+}
+    <div class="container">
+        <h1>Add Student</h1>
+        <form method="post">
+            <div class="row mb-3">
+                <label for="firstname" class="col-md-1">Firstname</label>
+                <div class="col-md-6">
+                    @* This binds the input field to the StudentInsertDto.Firstname property. *@
+                    @* When the form is submitted, ASP.NET automatically maps the user input to this property. *@
+                    <input asp-for="StudentInsertDto.Firstname" class="form-control"/>
+                    <span asp-validation-for="StudentInsertDto.Firstname" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="lastname" class="col-md-1">Lastname</label>
+                <div class="col-md-6">
+                    <input asp-for="StudentInsertDto.Lastname" class="form-control"/>
+                    <span asp-validation-for="StudentInsertDto.Lastname" class="text-danger"></span>
+                </div>
+            </div>
+            <div>
+                <div class="row mb-3">
+                    <div class="offset-md-1 col-md-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="offset-md-1 col-md-3">
+                        <a class="btn btn-outline-primary" href="/Students/getall">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div>
+            @if (Model.ErrorsArray.Count != 0)
+            {
+                @foreach (var error in Model.ErrorsArray)
+                {
+                    <div>
+                        <p>@error.Message </p>
+                    </div>
+                }
+            }
+        </div>
+    </div>

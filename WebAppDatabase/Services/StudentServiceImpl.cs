@@ -6,13 +6,18 @@ using WebAppDatabase.Exceptions;
 using WebAppDatabase.Models;
 
 namespace WebAppDatabase.Services;
-
+/// <summary>
+/// Initializes a new instance of the StudentServiceImpl class.
+/// This constructor uses Dependency Injection (DI) to receive required dependencies.
+/// </summary>
+/// <param name="studentDAO">Data Access Object (DAO) for student operations.</param>
+/// <param name="mapper">AutoMapper instance for DTO to Entity mapping.</param>
+/// <param name="logger">Logger instance for logging errors and operations.</param>
 public class StudentServiceImpl : IStudentService
 {
     private readonly IStudentDAO _studentDAO;
     private readonly IMapper _mapper;
     private readonly ILogger<StudentServiceImpl> _logger;
-
     //This constructor of StudentServiceImpl uses Dependency Injection (DI) to receive required dependencies
     //(IStudentDAO, IMapper, and ILogger). This follows the Inversion of Control (IoC) principle,
     //where the dependencies are not created inside the class but injected from an external container
@@ -23,7 +28,19 @@ public class StudentServiceImpl : IStudentService
         _mapper = mapper;
         _logger = logger;
     }
-
+    /// <summary>
+    /// 
+    /// <summary>
+    /// Inserts a new student into the database.
+    /// </summary>
+    /// <param name="studentInsertDTO">DTO containing student details.</param>
+    /// <returns>Returns a StudentReadonlyDTO containing inserted student details.</returns>
+    /// <exception cref="TransactionException">Thrown when a transaction fails.</exception>
+    /// <exception cref="Exception">Thrown when an unexpected error occurs.</exception>
+    /// </summary>
+    /// <param name="studentDao"></param>
+    /// <param name="mapper"></param>
+    /// <param name="logger"></param>
     public StudentReadonlyDTO? InsertStudent(StudentInsertDTO studentInsertDTO)
     {
         StudentReadonlyDTO? studentReadonly;
@@ -52,7 +69,13 @@ public class StudentServiceImpl : IStudentService
             throw;
         }
     }
-
+    
+    /// <summary>
+    /// Updates an existing student's information.
+    /// </summary>
+    /// <param name="studentUpdateDTO">DTO containing updated student details.</param>
+    /// <exception cref="StudentNotFoundException">Thrown when the student is not found.</exception>
+    /// <exception cref="TransactionException">Thrown when a transaction fails.</exception>
     public void UpdateStudent(StudentUpdateDTO studentUpdateDTO)
     {
         Student student = new Student();
@@ -87,7 +110,12 @@ public class StudentServiceImpl : IStudentService
             throw;
         }
     }
-
+    /// <summary>
+    /// Deletes a student by ID.
+    /// </summary>
+    /// <param name="id">Student ID to delete.</param>
+    /// <exception cref="StudentNotFoundException">Thrown when the student is not found.</exception>
+    /// <exception cref="TransactionException">Thrown when a transaction fails.</exception>
     public void DeleteStudent(int id)
     {
         try
@@ -116,7 +144,12 @@ public class StudentServiceImpl : IStudentService
             throw;
         }
     }
-
+    /// <summary>
+    /// Retrieves a student by ID.
+    /// </summary>
+    /// <param name="id">Student ID to retrieve.</param>
+    /// <returns>Returns a StudentReadonlyDTO containing the student's details.</returns>
+    /// <exception cref="StudentNotFoundException">Thrown when the student is not found.</exception>
     public StudentReadonlyDTO GetStudent(int id)
     {
         StudentReadonlyDTO studentReadonlyDTO;
@@ -144,7 +177,11 @@ public class StudentServiceImpl : IStudentService
             throw;
         }
     }
-
+    /// <summary>
+    /// Retrieves all students from the database.
+    /// </summary>
+    /// <returns>Returns a list of StudentReadonlyDTO containing student details.</returns>
+    /// <exception cref="Exception">Thrown when an unexpected error occurs.</exception>
     public List<StudentReadonlyDTO> GetAllStudents()
     {
         StudentReadonlyDTO studentReadonlyDTO;
