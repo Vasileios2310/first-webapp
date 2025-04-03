@@ -12,5 +12,7 @@ public class MapperConfig : Profile
         CreateMap<StudentInsertDTO, Student>().ReverseMap(); 
         CreateMap<StudentUpdateDTO, Student>().ReverseMap();
         CreateMap<StudentReadonlyDTO, Student>().ReverseMap();
+        
+        //CreateMap<>()
     }
 }
