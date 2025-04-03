@@ -20,13 +20,13 @@ public class TeacherInsertDTO
     [EmailAddress(ErrorMessage = "Invalid email address")]
     public string? Email { get; set; }
 
-    // public TeacherInsertDTO() { }
-    //
-    // public TeacherInsertDTO(string? firstname, string? lastname, string? taxNumber, string? email)
-    // {
-    //     Firstname = firstname;
-    //     Lastname = lastname;
-    //     TaxNumber = taxNumber;
-    //     Email = email;
-    // }
+    public TeacherInsertDTO() { }
+    
+    public TeacherInsertDTO(string? firstname, string? lastname, string? taxNumber, string? email)
+    {
+        Firstname = firstname;
+        Lastname = lastname;
+        TaxNumber = taxNumber;
+        Email = email;
+    }
 }

@@ -11,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IStudentDAO, StudentDAOImpl>(); //inject DAO implementation
 builder.Services.AddScoped<IStudentService, StudentServiceImpl>(); // //inject service implementation
+builder.Services.AddScoped<ITeacherDAO, TeacherDAOImpl>();
+builder.Services.AddScoped<ITeacherService, TeacherServiceImpl>();
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Host.UseSerilog((context, config) =>
 {

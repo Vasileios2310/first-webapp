@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebAppDatabase.DTO;
 
-public class TeacherUpdateDTO
+public class TeacherUpdateDTO : BaseDTO
 {
     [Required(ErrorMessage = "Firstname is required")]
     [MinLength(3, ErrorMessage = "Firstname must be at least 3 characters long")]
@@ -20,13 +20,14 @@ public class TeacherUpdateDTO
     [EmailAddress(ErrorMessage = "Invalid email address")]
     public string? Email { get; set; }
 
-    // public TeacherUpdateDTO() { }
-    //
-    // public TeacherUpdateDTO(string? firstname, string? lastname, string? taxNumber, string? email)
-    // {
-    //     Firstname = firstname;
-    //     Lastname = lastname;
-    //     TaxNumber = taxNumber;
-    //     Email = email;
-    // }
+    public TeacherUpdateDTO() { }
+    
+    public TeacherUpdateDTO(int id,string? firstname, string? lastname, string? taxNumber, string? email)
+    {
+        Id = id;
+        Firstname = firstname;
+        Lastname = lastname;
+        TaxNumber = taxNumber;
+        Email = email;
+    }
 }

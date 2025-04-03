@@ -44,7 +44,7 @@ public class StudentServiceImpl : IStudentService
     public StudentReadonlyDTO? InsertStudent(StudentInsertDTO studentInsertDTO)
     {
         StudentReadonlyDTO? studentReadonly;
-
+        
         try
         {
             using TransactionScope scope = new TransactionScope();

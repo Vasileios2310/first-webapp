@@ -13,13 +13,13 @@ public class TeacherReadOnlyDTO
     
     public string? Email { get; set; }
 
-    // public TeacherReadOnlyDTO() { }
-    //
-    // public TeacherReadOnlyDTO(string? firstname, string? lastname, string? taxNumber, string? email)
-    // {
-    //     Firstname = firstname;
-    //     Lastname = lastname;
-    //     TaxNumber = taxNumber;
-    //     Email = email;
-    // }
+    public TeacherReadOnlyDTO() { }
+    
+    public TeacherReadOnlyDTO(string? firstname, string? lastname, string? taxNumber, string? email)
+    {
+        Firstname = firstname;
+        Lastname = lastname;
+        TaxNumber = taxNumber;
+        Email = email;
+    }
 }
